@@ -1,6 +1,6 @@
 import openai
 def api(funcprompt : str):
-    openai.api_key = "YOUR_API_KEY_HERE"
+    openai.api_key = "YOUR_API_KEY"
 
     model_engine = "text-davinci-003"
     prompt = funcprompt
