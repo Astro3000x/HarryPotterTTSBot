@@ -1,5 +1,5 @@
 import speech_recognition
-
+import gui
 import pyttsx3
 import gpt
 
@@ -20,8 +20,9 @@ while True:
             text = recognizer.recognize_google(audio)
             text = text.lower()
             p = gpt.api(text)
-            print(p)
+
     except speech_recognition.UnknownValueError():
         recognizer = speech_recognition.Recognizer()
         continue
 
+    gui()

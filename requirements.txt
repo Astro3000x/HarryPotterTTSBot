@@ -1,3 +1,4 @@
 speechrecognition
 pyttsx3
-neuralintents
+openai
+Pillow
