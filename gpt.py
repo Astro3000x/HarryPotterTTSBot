@@ -10,7 +10,7 @@ def api(funcprompt : str):
     completion = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
-        max_tokens=1024,
+        max_tokens=4000,
         n=1,
         stop=None,
         temperature=0.5,

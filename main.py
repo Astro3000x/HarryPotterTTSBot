@@ -3,7 +3,7 @@ import gui
 import pyttsx3
 import gpt
 
-
+engine = pyttsx3.init()
 
 
 recognizer = speech_recognition.Recognizer()
@@ -20,6 +20,7 @@ while True:
             text = recognizer.recognize_google(audio)
             text = text.lower()
             p = gpt.api(text)
+            engine.say(p)
 
     except speech_recognition.UnknownValueError():
         recognizer = speech_recognition.Recognizer()
